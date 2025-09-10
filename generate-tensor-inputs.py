@@ -22,3 +22,9 @@ np.save('input_ids', encoded_input['input_ids'])
 # np.save('token_type_ids', encoded_input['token_type_ids'])
 np.save('attention_mask', encoded_input['attention_mask'])
 
+
+# Create your array
+past_key = np.zeros((1, 8, 0, 128), dtype=np.float32)
+
+# Save to .npy file
+np.save('past_key_values.npy', past_key)
